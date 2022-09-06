@@ -1,9 +1,10 @@
 input.onButtonPressed(Button.A, function () {
-	
+    Health += 1
+    basic.showIcon(IconNames.TShirt)
 })
 input.onButtonPressed(Button.B, function () {
-    Health += -5
-    music.playSoundEffect(music.builtinSoundEffect(soundExpression.sad), SoundExpressionPlayMode.UntilDone)
+    Health += -1
+    basic.showIcon(IconNames.Sword)
 })
 let Health = 10
 basic.forever(function () {
